@@ -1,0 +1,85 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight:700;
+	height:100%;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	color:#0048ff;
+}
+h1{font-size:86px;padding:0;margin:0}
+h4{font-size:54px;padding:0;margin:0}
+
+.formWrapper {
+	width: 768px;
+	height:1024px;
+	margin:0 auto;
+	text-align:left;
+}
+
+label {color:white;}
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border:3px solid #EFEFEF;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:#d0d0d0;
+	border:3px solid #EFEFEF;
+}
+#good, #ok, #bad {
+	display:block;
+	margin:0 50px 50px 50px;
+	padding:15px 30px 19px 40px;
+	border-radius:20px;
+	font-size:86px;
+}
+#ss-submit {
+	border-radius:20px;
+	font-size:86px;
+	width:400px;
+	margin:70px auto 0;
+	display:block;
+	font-family:inherit;
+	font-weight:700;
+	background-color:#0048ff;
+	color:white;
+	-webkit-appearance: none;
+	padding: 10px;
+text-align: center;
+}
+
+#good{color:#00ce52;}
+#ok{color:#f3a308;}
+#bad{color:#a51919;}
+
+input[type=radio]:checked + label { 
+   border:3px solid #0048ff;
+   background-color:#EFEFEF;
+}
+.question{font-size:86px;text-align:center;padding:20px 0 50px;font-family: 'Quicksand', sans-serif;}
+#message{
+}
+.what {background-color:#0048ff;color:white;padding:0px;border-radius:50px;text-decoration:none;font-size:56px;width:56px;}
